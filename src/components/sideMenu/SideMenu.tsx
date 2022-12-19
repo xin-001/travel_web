@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./SideMenu.module.css"
 import { sideMenuList } from "./mockup";
 import { Menu } from "antd";
-import { StarTwoTone, HeartOutlined, HeartTwoTone} from "@ant-design/icons";
+import { StarTwoTone, HeartTwoTone} from "@ant-design/icons";
 
 
 

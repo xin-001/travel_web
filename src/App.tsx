@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './App.module.css';
 import {Header} from './components/header/Header'
-import { Footer, SideMenu, Carousel,ProductCollection} from './components'
+import { Footer, SideMenu, Carousel, ProductCollection, BusinessPartners} from './components'
 import {Row,Col, Typography} from 'antd'
 //import { productList } from './mockups';
 
@@ -21,6 +21,7 @@ function App() {
         </Row>
         <ProductCollection />
       </div>
+      <BusinessPartners/>
       <Footer/>
     </div>
   );
