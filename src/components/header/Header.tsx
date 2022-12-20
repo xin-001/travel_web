@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
                         <img src={logo} alt="logo" className={styles['App-logo']} />
                     </Col>
                     <Col span={5} >
-                        <Typography.Title level={3} className={styles.title} >Travel The USA</Typography.Title>
+                        <Typography.Title  className={styles.title} >Travel The USA</Typography.Title>
                     </Col>
                     <Col span={15}>
                         <Input.Search
