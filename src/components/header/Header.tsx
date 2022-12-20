@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./header.module.css";
-import { Layout, Typography, Input, Menu, Button, } from 'antd';
+import { Layout, Typography, Input, Menu, Button, Row, Col } from 'antd';
 import logo from '../../assets/logo.svg';
 import { HomeOutlined  } from '@ant-design/icons'
 
@@ -15,12 +15,20 @@ export const Header: React.FC = () => {
                 </Button.Group>
             </div>
             <Layout.Header className={styles['main-header']}>
-                <img src={logo} alt="logo" className={styles['App-logo']} />
-                <Typography.Title level={3} className={styles.title}>Travel The USA</Typography.Title>
-                <Input.Search
-                    placeholder={'Please enter the destination, theme, or keyword'}
-                    enterButton className={styles['search-input']}
-                />
+                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+                    <Col span={2}>
+                        <img src={logo} alt="logo" className={styles['App-logo']} />
+                    </Col>
+                    <Col span={5} >
+                        <Typography.Title level={3} className={styles.title} >Travel The USA</Typography.Title>
+                    </Col>
+                    <Col span={15}>
+                        <Input.Search
+                        placeholder={'Please enter the destination, theme, or keyword'}
+                        enterButton className={styles['search-input']}
+                        />
+                    </Col>
+                </Row>
             </Layout.Header>
             <Menu className={styles["main-menu"]} mode={'horizontal'}
                 items={[
