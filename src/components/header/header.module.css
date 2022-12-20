@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 1000px) {
     .search-input {
-        width: 180px !important;
+        width: 215px !important;
         margin-left: 60%;
     }
     .title{
@@ -84,5 +84,8 @@
     .App-logo{
         height: 0;
         width: 0;
+    }
+    .main-header{
+        margin-left: 0;
     }
 }
