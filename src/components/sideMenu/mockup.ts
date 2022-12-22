@@ -1,4 +1,3 @@
-import SubMenu from "antd/lib/menu/SubMenu";
 
 export const sideMenuList = [
     {
